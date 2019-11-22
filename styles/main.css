@@ -10,6 +10,8 @@ html {
     font-size: 62.5%;
     --color-primary: #ff3737;
     --color-secondary: #aa42ff;
+    --color-light-grey: #e2e2e2;
+    --color-text: #3a3a3a;
 }
 
 body {
@@ -26,12 +28,14 @@ body {
 
 h1 {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-weight: bold;
+    margin-bottom: 2.4rem;
 }
 
 p {
-    margin-top: 2.4rem;
+    color: var(--color-text);
+    margin-top: 1rem;
     line-height: 2.8rem;
 }
 
@@ -39,9 +43,9 @@ p {
 
 .navbar {
     height: 70px;
-    -webkit-box-shadow: 0px 6px 16px 0px rgba(70, 110, 140, 0.12);
-    -moz-box-shadow: 0px 6px 16px 0px rgba(70, 110, 140, 0.12);
-    box-shadow: 0px 6px 10px 0px rgba(70, 110, 140, 0.12);
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(140, 70, 70, 0.12);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(140, 70, 70, 0.12);
+    box-shadow: 0px 6px 12px 0px rgba(140, 70, 70, 0.12);
 }
 
 .navbar__wrapper {
@@ -102,7 +106,7 @@ p {
     width: 300px;
     display: inline-block;
     white-space: initial;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .teaser-card--big {
@@ -160,18 +164,18 @@ section {
 .section-heading {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1.6rem;
 }
 
 .section-label {
     font-size: 2rem;
     font-weight: 700;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .separator {
     height: 1px;
-    background: #e2e2e2;
+    background: var(--color-light-grey);
 }
 
 /* === MEDIA QUERIES === */
