@@ -23,33 +23,25 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="container">
-                <img class="icon" src="images/iconmonstr-menu-1.svg" />
+            <div class="container navbar__wrapper">
+                <img
+                    class="navbar__hamburger"
+                    src="images/iconmonstr-menu-1.svg"
+                />
                 <a class="navbar__logo">Merrystory</a>
             </div>
         </div>
         <div class="container">
-            <h1>Good morning! 👋</h1>
-            <span class="section-label">TODAY'S MERRYPICK</span>
-            <div class="teaser-card teaser-card--big">
-                <img
-                    class="teaser-card__image"
-                    src="images/kevin-lanceplaine-sO-JmQj95ec-unsplash.jpg"
-                    alt=""
-                />
-                <div class="teaser-card__gradient"></div>
-                <h2 class="teaser-card__title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </h2>
-            </div>
-            <div class="section-heading">
-                <h3 class="section-label">LATEST NEWS</h3>
-                <img class="icon" src="images/iconmonstr-arrow-18.svg" />
-            </div>
-        </div>
-        <div class="latest__carousel">
-            <div class="latest__carousel__wrapper">
-                <div class="teaser-card teaser-card--medium">
+            <section>
+                <h1>Good morning! 👋</h1>
+            </section>
+
+            <section>
+                <div class="section-heading">
+                    <h3 class="section-label">TODAY'S MERRYPICK</h3>
+                </div>
+
+                <div class="teaser-card teaser-card--big">
                     <img
                         class="teaser-card__image"
                         src="images/kevin-lanceplaine-sO-JmQj95ec-unsplash.jpg"
@@ -57,33 +49,60 @@
                     />
                     <div class="teaser-card__gradient"></div>
                     <h2 class="teaser-card__title">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
                     </h2>
                 </div>
-                <div class="teaser-card teaser-card--medium">
-                    <img
-                        class="teaser-card__image"
-                        src="images/daniil-silantev-F6Da4r2x5to-unsplash.jpg"
-                        alt=""
-                    />
-                    <div class="teaser-card__gradient"></div>
-                    <h2 class="teaser-card__title">
-                        Nam similique rerum dolor odio dolorem id consectetur
-                    </h2>
-                </div>
-                <div class="teaser-card teaser-card--medium">
-                    <img
-                        class="teaser-card__image"
-                        src="images/nadi-whatisdelirium-fZ8uf_L52wg-unsplash.jpg"
-                        alt=""
-                    />
-                    <div class="teaser-card__gradient"></div>
-                    <h2 class="teaser-card__title">
-                        Reiciendis dolorem et ut ab eius distinctio optio
-                        repudiandae aliquid?
-                    </h2>
+            </section>
+        </div>
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="section-label">LATEST NEWS</h3>
+                    <img class="icon" src="images/iconmonstr-arrow-18.svg" />
                 </div>
             </div>
-        </div>
+
+            <div class="latest__carousel">
+                <div class="latest__carousel__wrapper">
+                    <div class="teaser-card teaser-card--medium">
+                        <img
+                            class="teaser-card__image"
+                            src="images/kevin-lanceplaine-sO-JmQj95ec-unsplash.jpg"
+                            alt=""
+                        />
+                        <div class="teaser-card__gradient"></div>
+                        <h2 class="teaser-card__title">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit
+                        </h2>
+                    </div>
+                    <div class="teaser-card teaser-card--medium">
+                        <img
+                            class="teaser-card__image"
+                            src="images/daniil-silantev-F6Da4r2x5to-unsplash.jpg"
+                            alt=""
+                        />
+                        <div class="teaser-card__gradient"></div>
+                        <h2 class="teaser-card__title">
+                            Nam similique rerum dolor odio dolorem id
+                            consectetur
+                        </h2>
+                    </div>
+                    <div class="teaser-card teaser-card--medium">
+                        <img
+                            class="teaser-card__image"
+                            src="images/nadi-whatisdelirium-fZ8uf_L52wg-unsplash.jpg"
+                            alt=""
+                        />
+                        <div class="teaser-card__gradient"></div>
+                        <h2 class="teaser-card__title">
+                            Reiciendis dolorem et ut ab eius distinctio optio
+                            repudiandae aliquid?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

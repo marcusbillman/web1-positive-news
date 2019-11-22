@@ -8,6 +8,8 @@
 
 html {
     font-size: 62.5%;
+    --color-primary: #ff3737;
+    --color-secondary: #aa42ff;
 }
 
 body {
@@ -87,16 +89,46 @@ h1 {
 .section-heading {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .section-label {
     font-size: 2rem;
     font-weight: 700;
+    color: var(--color-primary);
     margin-right: 10px;
 }
 
 .icon {
     height: 1em;
+}
+
+section {
+    margin: 30px 0;
+}
+
+.navbar {
+    height: 70px;
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(70, 110, 140, 0.1);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(70, 110, 140, 0.1);
+    box-shadow: 0px 6px 10px 0px rgba(70, 110, 140, 0.12);
+}
+
+.navbar__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-left: 20px;
+}
+
+.navbar__hamburger {
+    fill: white;
 }
 
 /* === MEDIA QUERIES === */
