@@ -84,6 +84,21 @@ h1 {
     margin-left: 20px;
 }
 
+.section-heading {
+    display: flex;
+    align-items: center;
+}
+
+.section-label {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 1em;
+}
+
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 576px) {
