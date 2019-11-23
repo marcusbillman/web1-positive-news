@@ -164,12 +164,11 @@ p {
 /* === GENERAL === */
 
 .carousel {
-    overflow: auto;
+    overflow: auto hidden;
     white-space: nowrap;
 }
 
 .carousel__wrapper {
-    height: 250px;
     margin-left: 20px;
 }
 
