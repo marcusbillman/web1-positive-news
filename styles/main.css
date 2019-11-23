@@ -54,8 +54,21 @@ p {
     line-height: 2.8rem;
 }
 
-.icon--white {
-    fill: white;
+a {
+    color: var(--color-text);
+}
+
+.a--white {
+    color: white;
+}
+
+.icon-text {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.icon-text__text {
+    transform: translateY(-0.4rem);
 }
 
 /* === NAVBAR === */
@@ -191,6 +204,11 @@ p {
 
 .icon {
     height: 1em;
+    margin-right: 1rem;
+}
+
+.icon--white {
+    fill: white;
 }
 
 .section-heading {
@@ -208,19 +226,27 @@ p {
     background: var(--color-light-grey);
 }
 
+.margin {
+    width: 16px;
+    height: 16px;
+}
+
 /* === FOOTER === */
 
 .footer {
     background: var(--color-text);
     color: white;
+    padding: 30px 0;
 }
 
 .footer__links {
     display: flex;
+    flex-direction: column;
+    margin-top: 24px;
 }
 
-.footer__link {
-    display: flex;
+.footer__column {
+    margin-bottom: 24px;
 }
 
 /* === MEDIA QUERIES === */
