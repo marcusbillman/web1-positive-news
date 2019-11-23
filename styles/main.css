@@ -20,6 +20,10 @@ body {
     font-size: 2rem;
 }
 
+section {
+    margin: 40px 0;
+}
+
 .container {
     width: 100%;
     max-width: none;
@@ -30,8 +34,18 @@ body {
 h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 2.4rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 p {
@@ -40,7 +54,7 @@ p {
     line-height: 2.8rem;
 }
 
-.white {
+.icon--white {
     fill: white;
 }
 
@@ -160,8 +174,6 @@ p {
     position: absolute;
     left: 20px;
     bottom: 16px;
-    font-size: 2.4rem;
-    font-weight: bold;
     line-height: 3rem;
     color: white;
 }
@@ -181,10 +193,6 @@ p {
     height: 1em;
 }
 
-section {
-    margin: 40px 0;
-}
-
 .section-heading {
     display: flex;
     align-items: center;
@@ -192,8 +200,6 @@ section {
 }
 
 .section-label {
-    font-size: 2rem;
-    font-weight: 700;
     margin-right: 1rem;
 }
 
