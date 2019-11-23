@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html {
@@ -37,6 +38,10 @@ p {
     color: var(--color-text);
     margin-top: 1rem;
     line-height: 2.8rem;
+}
+
+.white {
+    fill: white;
 }
 
 /* === NAVBAR === */
@@ -195,6 +200,21 @@ section {
 .separator {
     height: 1px;
     background: var(--color-light-grey);
+}
+
+/* === FOOTER === */
+
+.footer {
+    background: var(--color-text);
+    color: white;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.footer__link {
+    display: flex;
 }
 
 /* === MEDIA QUERIES === */
