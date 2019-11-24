@@ -11,7 +11,7 @@ html {
     font-size: 62.5%;
     --color-primary: #ff3737;
     --color-secondary: #aa42ff;
-    --color-light-grey: #e2e2e2;
+    --color-light-grey: #ececec;
     --color-text: #3a3a3a;
 }
 
@@ -58,8 +58,8 @@ a {
     color: var(--color-text);
 }
 
-.a--white {
-    color: white;
+.a--black {
+    color: black;
 }
 
 .icon-text {
@@ -70,6 +70,10 @@ a {
 .icon-text__text {
     line-height: 1.5rem;
     align-self: end;
+}
+
+.icon-text__text--multiline {
+    line-height: 2.4rem;
 }
 
 /* === NAVBAR & HAMBURGER MENU === */
@@ -299,7 +303,7 @@ a {
 }
 
 .separator {
-    height: 1px;
+    height: 2px;
     background: var(--color-light-grey);
 }
 
@@ -332,9 +336,14 @@ a {
 /* === FOOTER === */
 
 .footer {
-    background: var(--color-text);
-    color: white;
+    background: var(--color-light-grey);
     padding: 30px 0;
+    -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.12),
+        0 3px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.12),
+        0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.12),
+        0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .footer__links {
