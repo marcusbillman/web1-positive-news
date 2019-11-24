@@ -69,6 +69,15 @@ a {
 
 .icon-text__text {
     line-height: 1.5rem;
+    color: inherit;
+}
+
+.icon-text__icon {
+    fill: currentColor;
+}
+
+.icon-text--active {
+    color: var(--color-primary);
 }
 
 .icon-text__text--multiline {
