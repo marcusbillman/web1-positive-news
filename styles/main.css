@@ -322,6 +322,7 @@ a {
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    pointer-events: none;
 }
 
 .hamburger-toggle:checked ~ .dim-overlay {
