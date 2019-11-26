@@ -270,8 +270,8 @@ a {
 
 .menu {
     width: 100%;
+    padding-top: 70px;
     position: absolute;
-    top: 70px;
     background: white;
     z-index: 2;
     transform: translateY(-100%);
@@ -284,7 +284,7 @@ a {
 }
 
 .hamburger-toggle:checked ~ .menu {
-    transform: none;
+    transform: translateY(-70px);
 }
 
 .menu__wrapper {
