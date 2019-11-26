@@ -74,6 +74,7 @@ a {
 .icon-text__text {
     line-height: 1.5rem;
     color: inherit;
+    margin-left: 1rem;
 }
 
 .icon-text__icon {
@@ -289,7 +290,6 @@ a {
 
 .icon {
     height: 1em;
-    margin-right: 1rem;
 }
 
 .icon--white {
@@ -298,6 +298,7 @@ a {
 
 .section-heading {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 1.6rem;
 }
