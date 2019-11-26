@@ -373,11 +373,12 @@ a {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0) 100%
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 70%,
+        rgba(0, 0, 0, 0.5) 100%
     );
 }
 
@@ -394,6 +395,7 @@ a {
 .teaser-card__title {
     position: absolute;
     left: 20px;
+    right: 20px;
     bottom: 16px;
     line-height: 3rem;
     color: white;
