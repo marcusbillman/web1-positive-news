@@ -1,4 +1,4 @@
-/* === GLOBAL === */
+/* === DOM & MAIN CONTAINERS === */
 
 * {
     margin: 0;
@@ -34,6 +34,8 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* === TYPOGRAPHY === */
 
 h1 {
     font-size: 4rem;
@@ -73,6 +75,16 @@ a {
     text-decoration: none;
 }
 
+/* === ICONS & ICON TEXT === */
+
+.icon {
+    height: 1em;
+}
+
+.icon--white {
+    fill: white;
+}
+
 .icon-text {
     display: flex;
     align-items: center;
@@ -96,6 +108,43 @@ a {
     line-height: 2.4rem;
 }
 
+/* === GENERAL === */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.section-label {
+    margin-right: 1rem;
+}
+
+.carousel {
+    overflow: auto hidden;
+    white-space: nowrap;
+}
+
+.carousel__wrapper {
+    margin-left: 20px;
+}
+
+.flex-column {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.separator {
+    height: 2px;
+    background: var(--color-light-grey);
+}
+
+.margin {
+    width: 16px;
+    height: 16px;
+}
+
 /* === NAVBAR & HAMBURGER MENU === */
 
 .navbar {
@@ -116,7 +165,8 @@ a {
     z-index: 3;
 }
 
-.navbar__left {
+.navbar__left,
+.navbar__right {
     height: 100%;
     display: flex;
     align-items: center;
@@ -207,8 +257,25 @@ a {
 }
 
 .menu__link {
+    display: block;
     padding: 1.4rem 0;
-    position: relative;
+}
+
+.dim-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    pointer-events: none;
+}
+
+.hamburger-toggle:checked ~ .dim-overlay {
+    opacity: 0.6;
 }
 
 /* === TEASER === */
@@ -294,68 +361,6 @@ a {
     bottom: 16px;
     line-height: 3rem;
     color: white;
-}
-
-/* === GENERAL === */
-
-.carousel {
-    overflow: auto hidden;
-    white-space: nowrap;
-}
-
-.carousel__wrapper {
-    margin-left: 20px;
-}
-
-.icon {
-    height: 1em;
-}
-
-.icon--white {
-    fill: white;
-}
-
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.6rem;
-}
-
-.section-label {
-    margin-right: 1rem;
-}
-
-.separator {
-    height: 2px;
-    background: var(--color-light-grey);
-}
-
-.margin {
-    width: 16px;
-    height: 16px;
-}
-
-.dim-overlay {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    opacity: 0;
-    backdrop-filter: blur(10px);
-    z-index: 1;
-    transition: opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    pointer-events: none;
-}
-
-.hamburger-toggle:checked ~ .dim-overlay {
-    opacity: 0.6;
-}
-
-.flex-column {
-    width: 100%;
-    margin-bottom: 3rem;
 }
 
 /* === FOOTER === */
