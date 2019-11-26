@@ -20,6 +20,10 @@ body {
     font-size: 2rem;
 }
 
+main {
+    margin-top: 100px;
+}
+
 section {
     margin: 40px 0;
 }
@@ -93,6 +97,10 @@ a {
 
 .navbar {
     height: 70px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
 }
 
 .navbar__wrapper {
@@ -100,8 +108,15 @@ a {
     background: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 3;
+}
+
+.navbar__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .hamburger-icon__line {
@@ -111,7 +126,7 @@ a {
     display: block;
     margin-bottom: 4px;
     z-index: 2;
-    background: var(--color-text);
+    background: black;
     transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1),
         background 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.55s ease;
 }
