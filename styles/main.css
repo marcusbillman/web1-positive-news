@@ -262,7 +262,7 @@ a {
 
 .menu {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 90px;
     position: absolute;
     background: white;
     z-index: 2;
@@ -276,7 +276,7 @@ a {
 }
 
 .menu.menu-open {
-    transform: translateY(-70px);
+    transform: translateY(-71px);
 }
 
 .menu__wrapper {
