@@ -440,6 +440,18 @@ a {
     .navbar__text {
         display: block;
     }
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+    .teaser-card-wrapper {
+        width: 32%;
+    }
+    .teaser-card--medium {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
     .main-feed-section {
         flex-direction: row;
     }
