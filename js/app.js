@@ -65,3 +65,7 @@ function closeMenu() {
     menu.classList.remove("menu-open");
     dimOverlay.classList.remove("menu-open");
 }
+
+window.onscroll = function() {
+    closeMenu();
+};
