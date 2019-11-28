@@ -332,10 +332,16 @@ a {
     margin-right: 0;
 }
 
+.teaser__header:hover {
+    background: var(--color-light-grey);
+}
+
 .teaser__header {
     display: flex;
     align-items: center;
     margin-bottom: 1.8rem;
+    border-radius: 8px;
+    transition: background 0.1s;
 }
 
 .teaser__image {
