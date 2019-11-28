@@ -24,15 +24,21 @@ main {
     margin-top: 100px;
 }
 
-section {
-    margin: 40px 0;
-}
-
 .container {
     width: 100%;
     max-width: none;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.main-feed-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* === TYPOGRAPHY === */
@@ -310,7 +316,10 @@ a {
 /* === TEASER === */
 
 .teaser {
+    width: 100%;
+    flex-shrink: 0;
     margin-bottom: 5rem;
+    margin-right: 0;
 }
 
 .teaser__header {
@@ -430,6 +439,13 @@ a {
     }
     .navbar__text {
         display: block;
+    }
+    .main-feed-section {
+        flex-direction: row;
+    }
+    .teaser {
+        width: calc(50% - 30px);
+        margin-right: 30px;
     }
 }
 
