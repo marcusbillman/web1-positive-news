@@ -214,6 +214,11 @@ a {
     color: var(--color-primary);
     transform: translateY(-0.3rem);
     margin-left: 20px;
+    transition: letter-spacing 0.3s;
+}
+
+.navbar__logo:hover {
+    letter-spacing: 0.2rem;
 }
 
 .navbar__link {
