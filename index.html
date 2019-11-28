@@ -13,18 +13,20 @@
     </head>
     <body>
         <div class="navbar">
-            <input class="hamburger-toggle" type="checkbox" />
             <div class="container navbar__wrapper">
                 <div class="navbar__left">
-                    <div class="hamburger-icon">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
                         <div
                             class="hamburger-icon__line hamburger-icon__line-1"
+                            id="hamburger-icon__line-1"
                         ></div>
                         <div
                             class="hamburger-icon__line hamburger-icon__line-2"
+                            id="hamburger-icon__line-2"
                         ></div>
                         <div
                             class="hamburger-icon__line hamburger-icon__line-3"
+                            id="hamburger-icon__line-3"
                         ></div>
                     </div>
                     <a class="navbar__logo">Merrystory</a>
@@ -106,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="container menu__wrapper">
                     <div class="flex-column">
                         <h3>Menu</h3>
@@ -200,7 +202,11 @@
                     </div>
                 </div>
             </div>
-            <div class="dim-overlay"></div>
+            <div
+                class="dim-overlay"
+                id="dim-overlay"
+                onclick="closeMenu()"
+            ></div>
         </div>
         <main>
             <div class="container">
@@ -475,4 +481,5 @@
             </div>
         </main>
     </body>
+    <script src="js/app.js"></script>
 </html>
