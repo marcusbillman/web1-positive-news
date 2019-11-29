@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
     --color-primary: #ff3737;
     --color-secondary: #aa42ff;
     --color-light-grey: #ececec;
