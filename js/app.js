@@ -68,4 +68,12 @@ function closeMenu() {
 
 window.onscroll = function() {
     closeMenu();
+    if (
+        document.body.scrollTop > 30 ||
+        document.documentElement.scrollTop > 30
+    ) {
+        menu.classList.add("menu--shadow");
+    } else {
+        menu.classList.remove("menu--shadow");
+    }
 };
