@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .container {
@@ -34,6 +34,10 @@ main {
 
 section {
     margin: 40px 0;
+}
+
+.greeting-section {
+    margin-top: 100px;
 }
 
 .main-feed {
@@ -55,6 +59,8 @@ h2 {
     font-size: 2.4rem;
     font-weight: 700;
     color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -139,6 +145,7 @@ a {
 }
 
 .section-label {
+    margin: 0;
     margin-right: 1rem;
 }
 
@@ -380,6 +387,10 @@ a {
     margin-bottom: 0.4rem;
 }
 
+.teaser__title {
+    margin: 0;
+}
+
 /* === TEASER CARD === */
 
 .teaser-card {
@@ -446,6 +457,7 @@ a {
     right: 20px;
     bottom: 16px;
     line-height: 3rem;
+    margin: 0;
     color: white;
 }
 
