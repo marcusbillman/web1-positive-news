@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Merrystory &mdash; Good news only</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Cabin:300,400,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/main.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container navbar__wrapper">
+                <div class="navbar__left">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <div
+                            class="hamburger-icon__line hamburger-icon__line-1"
+                            id="hamburger-icon__line-1"
+                        ></div>
+                        <div
+                            class="hamburger-icon__line hamburger-icon__line-2"
+                            id="hamburger-icon__line-2"
+                        ></div>
+                        <div
+                            class="hamburger-icon__line hamburger-icon__line-3"
+                            id="hamburger-icon__line-3"
+                        ></div>
+                    </div>
+                    <a href="index.html" class="navbar__logo a--no-underline"
+                        >Merrystory</a
+                    >
+                </div>
+                <div class="navbar__right">
+                    <a href="index.html" class="navbar__link a--no-underline">
+                        <div class="icon-text">
+                            <svg
+                                class="icon icon-text__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M12 9.185l7 6.514v6.301h-3v-5h-8v5h-3v-6.301l7-6.514zm0-2.732l-9 8.375v9.172h7v-5h4v5h7v-9.172l-9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"
+                                />
+                            </svg>
+                            <span class="icon-text__text navbar__text"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
+                    <a href="#" class="navbar__link a--no-underline"
+                        ><div class="icon-text">
+                            <svg
+                                class="icon icon-text__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M15.91 13.34l2.636-4.026-.454-.406-3.673 3.099c-.675-.138-1.402.068-1.894.618-.736.823-.665 2.088.159 2.824.824.736 2.088.665 2.824-.159.492-.55.615-1.295.402-1.95zm-3.91-10.646v-2.694h4v2.694c-1.439-.243-2.592-.238-4 0zm8.851 2.064l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.927-1.5-1.328zm-18.851 4.242h8v2h-8v-2zm-2 4h8v2h-8v-2zm3 4h7v2h-7v-2zm21-3c0 5.523-4.477 10-10 10-2.79 0-5.3-1.155-7.111-3h3.28c1.138.631 2.439 1 3.831 1 4.411 0 8-3.589 8-8s-3.589-8-8-8c-1.392 0-2.693.369-3.831 1h-3.28c1.811-1.845 4.321-3 7.111-3 5.523 0 10 4.477 10 10z"
+                                />
+                            </svg>
+                            <span class="icon-text__text navbar__text"
+                                >Latest</span
+                            >
+                        </div></a
+                    >
+                    <a href="#" class="navbar__link a--no-underline"
+                        ><div class="icon-text">
+                            <svg
+                                class="icon icon-text__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M22 10v12h-12v-12h12zm2-2h-16v16h16v-16zm-20-4v16h2v-14h14v-2h-16zm-4-4v16h2v-14h14v-2h-16z"
+                                />
+                            </svg>
+                            <span class="icon-text__text navbar__text"
+                                >Categories</span
+                            >
+                        </div></a
+                    >
+                    <div class="navbar__search-wrapper">
+                        <a href="#" class="navbar__search-icon a--no-underline">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"
+                                />
+                            </svg>
+                        </a>
+                        <input
+                            class="navbar__search-bar"
+                            type="text"
+                            placeholder="Search"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="menu" id="menu">
+                <div class="container menu__wrapper">
+                    <div class="flex-column">
+                        <h3>Menu</h3>
+                        <div class="margin"></div>
+                        <a href="index.html" class="menu__link a--no-underline">
+                            <div class="icon-text">
+                                <svg
+                                    class="icon icon-text__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M12 9.185l7 6.514v6.301h-3v-5h-8v5h-3v-6.301l7-6.514zm0-2.732l-9 8.375v9.172h7v-5h4v5h7v-9.172l-9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"
+                                    />
+                                </svg>
+                                <span class="icon-text__text">Home</span>
+                            </div>
+                        </a>
+                        <a href="#" class="menu__link a--no-underline"
+                            ><div class="icon-text">
+                                <svg
+                                    class="icon icon-text__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M15.91 13.34l2.636-4.026-.454-.406-3.673 3.099c-.675-.138-1.402.068-1.894.618-.736.823-.665 2.088.159 2.824.824.736 2.088.665 2.824-.159.492-.55.615-1.295.402-1.95zm-3.91-10.646v-2.694h4v2.694c-1.439-.243-2.592-.238-4 0zm8.851 2.064l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.927-1.5-1.328zm-18.851 4.242h8v2h-8v-2zm-2 4h8v2h-8v-2zm3 4h7v2h-7v-2zm21-3c0 5.523-4.477 10-10 10-2.79 0-5.3-1.155-7.111-3h3.28c1.138.631 2.439 1 3.831 1 4.411 0 8-3.589 8-8s-3.589-8-8-8c-1.392 0-2.693.369-3.831 1h-3.28c1.811-1.845 4.321-3 7.111-3 5.523 0 10 4.477 10 10z"
+                                    />
+                                </svg>
+                                <span class="icon-text__text">Latest</span>
+                            </div></a
+                        >
+                        <a href="#" class="menu__link a--no-underline"
+                            ><div class="icon-text">
+                                <svg
+                                    class="icon icon-text__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M22 10v12h-12v-12h12zm2-2h-16v16h16v-16zm-20-4v16h2v-14h14v-2h-16zm-4-4v16h2v-14h14v-2h-16z"
+                                    />
+                                </svg>
+                                <span class="icon-text__text">Categories</span>
+                            </div></a
+                        >
+                    </div>
+                    <div class="flex-column">
+                        <h3>Company</h3>
+                        <div class="margin"></div>
+                        <a href="#" class="menu__link a--no-underline"
+                            ><div class="icon-text">
+                                <svg
+                                    class="icon icon-text__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M2.001 9.352c0 1.873.849 2.943 1.683 3.943.031 1 .085 1.668-.333 3.183 1.748-.558 2.038-.778 3.008-1.374 1 .244 1.474.381 2.611.491-.094.708-.081 1.275.055 2.023-.752-.06-1.528-.178-2.33-.374-1.397.857-4.481 1.725-6.649 2.115.811-1.595 1.708-3.785 1.661-5.312-1.09-1.305-1.705-2.984-1.705-4.695-.001-4.826 4.718-8.352 9.999-8.352 5.237 0 9.977 3.484 9.998 8.318-.644-.175-1.322-.277-2.021-.314-.229-3.34-3.713-6.004-7.977-6.004-4.411 0-8 2.85-8 6.352zm20.883 10.169c-.029 1.001.558 2.435 1.088 3.479-1.419-.258-3.438-.824-4.352-1.385-.772.188-1.514.274-2.213.274-3.865 0-6.498-2.643-6.498-5.442 0-3.174 3.11-5.467 6.546-5.467 3.457 0 6.546 2.309 6.546 5.467 0 1.12-.403 2.221-1.117 3.074zm-7.563-3.021c0-.453-.368-.82-.82-.82s-.82.367-.82.82.368.82.82.82.82-.367.82-.82zm3 0c0-.453-.368-.82-.82-.82s-.82.367-.82.82.368.82.82.82.82-.367.82-.82zm3 0c0-.453-.368-.82-.82-.82s-.82.367-.82.82.368.82.82.82.82-.367.82-.82z"
+                                    />
+                                </svg>
+                                <span class="icon-text__text"
+                                    >Contact & support</span
+                                >
+                            </div></a
+                        >
+                        <a href="about.html" class="menu__link a--no-underline"
+                            ><div class="icon-text">
+                                <svg
+                                    class="icon icon-text__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M10.644 17.08c2.866-.662 4.539-1.241 3.246-3.682-3.932-7.427-1.042-11.398 3.111-11.398 4.235 0 7.054 4.124 3.11 11.398-1.332 2.455.437 3.034 3.242 3.682 2.483.574 2.647 1.787 2.647 3.889v1.031h-18c0-2.745-.22-4.258 2.644-4.92zm-12.644 4.92h7.809c-.035-8.177 3.436-5.313 3.436-11.127 0-2.511-1.639-3.873-3.748-3.873-3.115 0-5.282 2.979-2.333 8.549.969 1.83-1.031 2.265-3.181 2.761-1.862.43-1.983 1.34-1.983 2.917v.773z"
+                                    />
+                                </svg>
+                                <span class="icon-text__text">About us</span>
+                            </div></a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div
+                class="dim-overlay"
+                id="dim-overlay"
+                onclick="closeMenu()"
+            ></div>
+        </div>
+        <main>
+            <div class="hero">
+                <img
+                    class="hero__image"
+                    src="images/kevin-lanceplaine-sO-JmQj95ec-unsplash.jpg"
+                    alt=""
+                />
+            </div>
+            <div class="container">
+                <section>
+                    <h1>
+                        About Merrystory
+                    </h1>
+                </section>
+                <section>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Voluptatum ratione quaerat earum repellendus iure
+                        cum, officiis facere expedita ducimus voluptatem nulla
+                        voluptas? Eligendi quo at temporibus aut laborum
+                        reiciendis minus accusamus eum quae veniam? Facere eos,
+                        optio eaque, neque eligendi voluptates voluptas dolor
+                        quo expedita amet quis voluptatibus excepturi! Velit quo
+                        deserunt reiciendis vel veritatis accusamus, sit harum
+                        ipsa ullam!
+                    </p>
+                    <p>
+                        Tempora eaque maiores, sint, deserunt accusantium sequi
+                        voluptatum, unde fugiat aliquam vero quibusdam laborum
+                        saepe necessitatibus mollitia voluptatem fugit quaerat
+                        reiciendis quod distinctio tenetur voluptate neque
+                        repellat! Repellendus optio, nihil error, consequatur
+                        accusantium qui enim quas beatae quia numquam illo
+                        quisquam dolor eligendi porro libero, similique sapiente
+                        asperiores dolorem iusto. Nobis dignissimos nam
+                        distinctio commodi quod, ratione ipsum laboriosam
+                        deleniti.
+                    </p>
+                    <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h2>
+                    <p>
+                        Facere soluta deserunt impedit neque voluptates amet,
+                        quos et natus accusamus eius, praesentium dicta nesciunt
+                        illo voluptatem repellendus! Adipisci voluptas nam dicta
+                        asperiores necessitatibus accusamus, dolor nesciunt quod
+                        esse quas aperiam tempore at doloribus expedita nulla
+                        ducimus commodi tempora doloremque similique iusto
+                        placeat perferendis laborum temporibus nostrum!
+                        Necessitatibus dolor natus quisquam id dolore,
+                        reprehenderit eum repudiandae. Neque adipisci odit ab.
+                    </p>
+                    <p>
+                        In accusamus sit voluptatem vitae molestiae, rerum nulla
+                        ipsam quisquam. Alias dolorum maxime nesciunt, facilis
+                        veritatis odio officia cumque quam voluptas ex atque
+                        hic. Officiis mollitia veniam excepturi eveniet at
+                        consequatur voluptatibus inventore consequuntur
+                        assumenda ipsam dolorem esse dolor incidunt quae, quo
+                        quisquam sed possimus eum totam? Adipisci voluptatum,
+                        provident, id sit aperiam dolorum cumque iure pariatur
+                        neque, molestiae dignissimos.
+                    </p>
+                    <p>
+                        Ullam ipsam distinctio quae facere iure cumque delectus
+                        error quas mollitia vitae possimus perferendis ab,
+                        officia vero assumenda placeat soluta praesentium
+                        dolores quaerat qui cupiditate, perspiciatis repudiandae
+                        quam dolor. Hic laboriosam, eius consequuntur at sit ex
+                        qui maiores, similique veniam dignissimos quod. Commodi,
+                        veniam amet nemo laborum fugiat consectetur suscipit cum
+                        quae ea, sunt fugit? Neque molestias debitis facere
+                        corrupti!
+                    </p>
+                    <p>
+                        Minima neque repudiandae eligendi assumenda facere sed!
+                        Tempora assumenda, impedit nam perspiciatis aperiam
+                        quisquam, accusantium ut iure quasi unde quam laboriosam
+                        maiores repudiandae eaque iusto temporibus. Cumque modi
+                        quas vitae labore eveniet eum quo inventore laboriosam
+                        minima earum. Illo maiores obcaecati in, delectus iste
+                        facilis sapiente cupiditate sunt necessitatibus soluta a
+                        laborum dicta totam facere dolores, molestiae, tenetur
+                        vitae cumque.
+                    </p>
+                    <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h2>
+                    <p>
+                        Ipsam neque, voluptates molestias libero quod animi
+                        accusantium recusandae voluptatibus assumenda autem
+                        quia, cupiditate maiores soluta non alias perspiciatis
+                        voluptatem excepturi cum deserunt aliquam omnis illo?
+                        Nihil illum numquam possimus beatae veniam earum vel
+                        voluptatibus nemo. Reiciendis voluptas dicta quos cumque
+                        explicabo at molestias, excepturi culpa minus eaque
+                        adipisci consectetur distinctio asperiores! Placeat
+                        itaque eligendi soluta velit aspernatur sequi eum!
+                    </p>
+                    <p>
+                        Soluta tempora nam, ipsum praesentium ipsam eos autem,
+                        quod quas dolore at sunt. Maiores suscipit accusamus
+                        quia facilis provident, mollitia nobis doloremque
+                        blanditiis a tempora aperiam sequi eum ea nam eos fugit
+                        unde iste ad eius quaerat nesciunt minima. Dolor ipsum
+                        cupiditate voluptatibus atque at ex temporibus.
+                        Reprehenderit sit debitis iure. Amet impedit nisi ipsam
+                        quisquam ratione! Voluptatum, aperiam quos!
+                    </p>
+                    <p>
+                        Exercitationem nobis libero nostrum voluptatem.
+                        Provident tempora neque id voluptate quos, molestiae
+                        ducimus esse illum. Nulla dolorem excepturi fugit,
+                        quisquam nisi eius harum sed ut, saepe consectetur quam
+                        repellat! Veritatis, corrupti consequatur in, animi
+                        explicabo eaque debitis aut inventore laboriosam illo,
+                        perspiciatis quos dolore. Eveniet ea voluptatibus
+                        blanditiis nostrum, ut quod labore atque quaerat culpa.
+                        Vitae non at repellat delectus?
+                    </p>
+                    <p>
+                        Delectus, quae. Vitae non consequatur reprehenderit,
+                        accusantium sequi quaerat fugit amet, exercitationem
+                        perspiciatis magni ut id, similique quae facilis
+                        asperiores quo magnam. A, possimus doloribus aspernatur
+                        nulla sed omnis sit ad quod voluptatum repellat eveniet
+                        reprehenderit recusandae doloremque velit! Fugit
+                        excepturi reiciendis vitae illum vero esse dignissimos,
+                        blanditiis aperiam magnam sed amet soluta dolorum
+                        repellat, voluptas nam maxime non corporis?
+                    </p>
+                </section>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <h1>Merrystory</h1>
+                    <div class="footer__links">
+                        <div class="flex-column">
+                            <h3>CONTACT</h3>
+                            <div class="margin"></div>
+                            <a
+                                href="mailto:hello@merrystory.io"
+                                class="a--no-underline black"
+                            >
+                                <div class="icon-text">
+                                    <svg
+                                        class="icon icon-text__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            d="M11.99 0l-11.99 8.723v15.277h24v-15.277l-12.01-8.723zm.001 2.472l9.793 7.113-6.735 4.588-3.049-2.47-3.049 2.471-6.737-4.589 9.777-7.113zm-9.991 9.386l5.329 3.63-5.329 4.318v-7.948zm.474 10.142l9.526-7.723 9.526 7.723h-19.052zm19.526-2.194l-5.329-4.317 5.329-3.631v7.948z"
+                                        />
+                                    </svg>
+                                    <span class="icon-text__text"
+                                        >hello@merrystory.io</span
+                                    >
+                                </div>
+                            </a>
+                            <div class="margin"></div>
+                            <a
+                                href="tel:(123)-456 7890"
+                                class="a--no-underline black"
+                            >
+                                <div class="icon-text">
+                                    <svg
+                                        class="icon icon-text__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            d="M9.762 1.322l2.843-1.322 4.041 7.89-2.725 1.341c-.537 1.259 2.159 6.289 3.297 6.372.09-.058 2.672-1.328 2.672-1.328l4.11 7.933s-2.764 1.354-2.854 1.396c-7.861 3.59-19.101-18.259-11.384-22.282zm1.929 1.274l-1.023.504c-5.293 2.762 4.178 21.185 9.648 18.686l.972-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.252-4.398zm-.759 18.382c-1.474 1.442-3.914 1.708-4.604.522-.47-.809-.311-1.728-.127-2.793.201-1.161.429-2.478-.295-3.71-1.219-2.077-3.897-1.983-5.906-.671l.956 1.463c.829-.542 1.784-.775 2.493-.609 1.653.388 1.151 2.526 1.03 3.229-.212 1.223-.45 2.61.337 3.968 1.331 2.294 5.054 2.047 7.29-.091-.397-.407-.789-.84-1.174-1.308z"
+                                        />
+                                    </svg>
+                                    <span class="icon-text__text"
+                                        >(123)-456 7890</span
+                                    >
+                                </div>
+                            </a>
+                            <div class="margin"></div>
+                            <a
+                                href="https://maps.google.com"
+                                class="a--no-underline black"
+                            >
+                                <div class="icon-text">
+                                    <svg
+                                        class="icon icon-text__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+                                        />
+                                    </svg>
+                                    <span
+                                        class="icon-text__text icon-text__text--multiline"
+                                        >123 Merry Ave.<br />Salt Lake City, AZ
+                                        12345</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-column">
+                            <h3>COMPANY</h3>
+                            <div class="margin"></div>
+                            <div class="icon-text">
+                                <a href="about.html" class="black">About us</a>
+                            </div>
+                            <div class="margin"></div>
+                            <div class="icon-text">
+                                <a href="#" class="black">Blog</a>
+                            </div>
+                            <div class="margin"></div>
+                            <div class="icon-text">
+                                <a href="#" class="black">Work with us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span>&copy; 2019 Merrystory</span>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="js/app.js"></script>
+</html>
