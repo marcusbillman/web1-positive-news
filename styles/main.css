@@ -462,6 +462,27 @@ a {
     margin-top: 24px;
 }
 
+/* === ARTICLE === */
+
+.hero {
+    width: 100%;
+    height: 300px;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-toolbar {
+    display: flex;
+}
+
+.article-toolbar__right {
+    display: flex;
+}
+
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 576px) {
