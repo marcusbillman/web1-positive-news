@@ -11,6 +11,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     --color-primary: #ff3737;
+    --color-primary-dark: #dd2f2f;
     --color-secondary: #aa42ff;
     --color-light-grey: #ececec;
     --color-text: #3a3a3a;
@@ -233,10 +234,26 @@ a {
     color: var(--color-primary);
     transform: translateY(-0.3rem);
     margin-left: 20px;
-    transition: letter-spacing 0.3s;
+    transition: letter-spacing 0.3s ease, clip-path 0.1s;
+}
+
+.navbar__logo-overlay {
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    transform: translateY(-0.3rem) translateX(2.4rem);
+    clip-path: inset(0 100% 0 0);
+    margin-left: 20px;
+    pointer-events: none;
+    transition: letter-spacing 0.3s ease;
 }
 
 .navbar__logo:hover {
+    letter-spacing: 0.2rem;
+}
+
+.navbar__logo:hover ~ .navbar__logo-overlay {
     letter-spacing: 0.2rem;
 }
 

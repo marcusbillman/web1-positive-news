@@ -3,6 +3,7 @@ var hamburgerIconLine2 = document.getElementById("hamburger-icon__line-2");
 var hamburgerIconLine3 = document.getElementById("hamburger-icon__line-3");
 var menu = document.getElementById("menu");
 var dimOverlay = document.getElementById("dim-overlay");
+var logoOverlay = document.getElementById("logo-overlay");
 
 document.addEventListener("DOMContentLoaded", function() {
     var dateSpan = document.getElementById("date");
@@ -67,13 +68,19 @@ function closeMenu() {
 }
 
 window.onscroll = function() {
+    var scrolledDistance =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    var pageHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    var scrolledPercentage = (scrolledDistance / pageHeight) * 100;
+
     closeMenu();
-    if (
-        document.body.scrollTop > 30 ||
-        document.documentElement.scrollTop > 30
-    ) {
+    if (scrolledDistance > 30) {
         menu.classList.add("menu--shadow");
     } else {
         menu.classList.remove("menu--shadow");
     }
+    logoOverlay.style.clipPath =
+        "inset(0 " + (100 - scrolledPercentage) + "% 0 0)";
 };
