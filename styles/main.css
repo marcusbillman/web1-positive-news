@@ -81,11 +81,27 @@ p {
 
 a {
     color: var(--color-primary);
+    text-decoration: none;
+    position: relative;
+}
+
+a:not(.a--no-decoration)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.1rem;
+    background: currentColor;
+    transition: bottom 0.2s ease;
+}
+
+a:not(.a--no-decoration):hover::after {
+    bottom: -4px;
 }
 
 .a--no-decoration {
     color: var(--color-text);
-    text-decoration: none;
 }
 
 .primary {
