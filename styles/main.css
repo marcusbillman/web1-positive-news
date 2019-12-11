@@ -40,7 +40,7 @@ section {
     margin-top: 100px;
 }
 
-.main-feed {
+.feed {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -594,7 +594,7 @@ a:not(.a--no-decoration):hover::after {
         width: 100%;
         margin-right: 0;
     }
-    .main-feed {
+    .feed {
         flex-direction: row;
     }
     .teaser {
