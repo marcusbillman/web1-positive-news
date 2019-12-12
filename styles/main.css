@@ -395,8 +395,8 @@ a:not(.a--no-decoration):hover::after {
     margin-right: 0;
 }
 
-.teaser__header:hover {
-    background: var(--color-light-grey);
+.teaser__header:hover .teaser__title {
+    color: var(--color-primary);
 }
 
 .teaser__header {
@@ -425,6 +425,7 @@ a:not(.a--no-decoration):hover::after {
 
 .teaser__title {
     margin: 0;
+    transition: color 0.1s ease;
 }
 
 .teaser__body {
