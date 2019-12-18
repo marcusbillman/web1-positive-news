@@ -551,6 +551,19 @@ a:not(.a--no-decoration):hover::after {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 576px) {
