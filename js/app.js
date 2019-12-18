@@ -1,3 +1,4 @@
+var hamburgerIcon = document.getElementById("hamburger-icon");
 var hamburgerIconLine1 = document.getElementById("hamburger-icon__line-1");
 var hamburgerIconLine2 = document.getElementById("hamburger-icon__line-2");
 var hamburgerIconLine3 = document.getElementById("hamburger-icon__line-3");
@@ -52,6 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
             greeting = "Good night! 🌛";
         }
         greetingHeading.textContent = greeting;
+    }
+});
+
+hamburgerIcon.addEventListener("keypress", function(event) {
+    console.log(event);
+    if (event.keyCode === 13) {
+        hamburgerIcon.click();
     }
 });
 

@@ -419,7 +419,7 @@ a:not(.a--no-decoration):hover::after {
 .teaser__data {
     display: block;
     font-size: 1.6rem;
-    opacity: 0.4;
+    opacity: 0.6;
     margin-bottom: 0.4rem;
 }
 
