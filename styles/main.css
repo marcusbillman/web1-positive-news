@@ -486,6 +486,7 @@ a:not(.a--no-decoration):hover::after {
 .teaser-card__data {
     position: absolute;
     left: 20px;
+    right: 20px;
     top: 16px;
     color: white;
     opacity: 0.8;
