@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 hamburgerIcon.addEventListener("keypress", function(event) {
-    console.log(event);
     if (event.keyCode === 13) {
         hamburgerIcon.click();
     }
